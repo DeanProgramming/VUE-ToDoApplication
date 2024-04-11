@@ -151,7 +151,7 @@ export default {
     
     addNewEntry(title, description, isDone, deadline, priority){  
       let newEntry = new ToDoItem(title, description, isDone, deadline, priority);
-      this.toDoList.items[ToDoList.items.length] = newEntry;
+      this.toDoList.items[this.toDoList.items.length] = newEntry;
       
       this.newTitle = "";
       this.newDescription = "";
